@@ -1,0 +1,72 @@
+// Layout styles
+#main-wrapper {
+  > .container {
+    background: #fff;
+
+    > .navbar {
+      height: 240px;
+      background: fixed url('http://www.flyacts.com/media/pics/header/beraten.jpg') no-repeat 50% 100%;
+      background-size: cover;
+    }
+  }
+}
+
+.row {
+  text-align: center;
+}
+
+.title {
+  padding-top: 20px;
+
+  &:hover a {
+    color: #c0ce00;
+  }
+}
+
+.content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 20px 0;
+  background: #fff;
+
+  .part {
+    h3 {
+      margin-top: 0;
+    }
+  }
+}
+
+.slogon {
+  margin-bottom: 0;
+}
+
+@media (min-width: 768px) {
+  #main-wrapper {
+    > .container {
+      > .navbar {
+        height: 400px;
+      }
+    }
+  }
+
+  .content {
+    // Generate 2 columns when in tablet mode
+    .part {
+      width: 50%;
+      min-height: 195px; // Ugly hack to fix the possibility of unwanted layout glitches
+      padding: 0 1%;
+      float: left;
+    }
+
+    .clearfix-mixin;
+  }
+}
+
+@media (min-width: 992px) {
+  .content {
+    // Generate 4 columns when in desktop mode
+    .part {
+      width: 25%;
+    }
+  }
+}
