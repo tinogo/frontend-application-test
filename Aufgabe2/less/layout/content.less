@@ -1,0 +1,52 @@
+@import "../../../Aufgabe1/less/mixins";
+
+#main-wrapper {
+  > .container {
+    background: #fff;
+
+    > .navbar {
+      height: 240px;
+      background: fixed url('http://www.flyacts.com/media/pics/header/beraten.jpg') no-repeat 50% 100%;
+      background-size: cover;
+    }
+  }
+}
+
+.row {
+  text-align: center;
+}
+
+.title {
+  padding-top: 20px;
+
+  &:hover a {
+    color: #c0ce00;
+  }
+}
+
+.content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background: #fff;
+
+  .part {
+    h3 {
+      margin-top: 0;
+    }
+  }
+}
+
+.slogon {
+  margin-bottom: 0;
+}
+
+@media (min-width: 768px) {
+  #main-wrapper {
+    > .container {
+      > .navbar {
+        height: 400px;
+      }
+    }
+  }
+}

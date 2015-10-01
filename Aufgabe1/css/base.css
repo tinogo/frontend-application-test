@@ -517,7 +517,12 @@ a:hover {
     display: inline;
   }
   .navbar-nav li a {
+    padding-top: 15px;
+    padding-bottom: 15px;
     display: inline-block;
+  }
+  .navbar-nav li a:hover {
+    padding-bottom: 13px;
   }
 }
 #main-wrapper > .container {

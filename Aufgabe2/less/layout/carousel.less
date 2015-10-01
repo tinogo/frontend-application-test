@@ -1,0 +1,41 @@
+@import "../../../Aufgabe1/less/mixins";
+
+.content {
+  overflow: hidden;
+  position: relative;
+  .box-sizing(content-box);
+
+  .part {
+    position: absolute;
+    left: 0;
+    opacity: 0;
+    -webkit-transition: opacity 0.5s;
+    -moz-transition: opacity 0.5s;
+    -ms-transition: opacity 0.5s;
+    -o-transition: opacity 0.5s;
+    transition: opacity 0.5s;
+
+    &.visible {
+      opacity: 1;
+      position: static;
+    }
+  }
+}
+
+.lazy-load {
+  max-width: 100%;
+  height: auto;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  opacity: 0;
+
+  &.loaded {
+    opacity: 1;
+    -webkit-transition: opacity 0.2s, height 0.5s;
+    -moz-transition: opacity 0.2s, height 0.5s;
+    -ms-transition: opacity 0.2s, height 0.5s;
+    -o-transition: opacity 0.2s, height 0.5s;
+    transition: opacity 0.2s, height 0.5s;
+  }
+}
