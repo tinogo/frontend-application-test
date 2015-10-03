@@ -356,8 +356,8 @@ th {
 }
 @font-face {
   font-family: 'fe-test';
-  src: url('../font/fe-test.eot?37404845');
-  src: url('../font/fe-test.eot?37404845#iefix') format('embedded-opentype'), url('../font/fe-test.woff?37404845') format('woff'), url('../font/fe-test.ttf?37404845') format('truetype'), url('../font/fe-test.svg?37404845#fe-test') format('svg');
+  src: url('../font/fe-test.eot?17858267');
+  src: url('../font/fe-test.eot?17858267#iefix') format('embedded-opentype'), url('../font/fe-test.woff?17858267') format('woff'), url('../font/fe-test.ttf?17858267') format('truetype'), url('../font/fe-test.svg?17858267#fe-test') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -367,7 +367,7 @@ th {
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: 'fe-test';
-    src: url('../font/fe-test.svg?37404845#fe-test') format('svg');
+    src: url('../font/fe-test.svg?17858267#fe-test') format('svg');
   }
 }
 */
@@ -403,14 +403,6 @@ th {
   content: '\e800';
 }
 /* '' */
-.icon-camera:before {
-  content: '\e801';
-}
-/* '' */
-.icon-contact:before {
-  content: '\e802';
-}
-/* '' */
 .icon-xing:before {
   content: '\e803';
 }
@@ -435,6 +427,14 @@ th {
   content: '\e808';
 }
 /* '' */
+.icon-contact:before {
+  content: '\e809';
+}
+/* '' */
+.icon-camera:before {
+  content: '\e80a';
+}
+/* '' */
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -561,7 +561,6 @@ a:hover {
   background: #fff;
 }
 #main-wrapper > .container > .navbar {
-  height: 240px;
   background: fixed url('http://www.flyacts.com/media/pics/header/beraten.jpg') no-repeat 50% 100%;
   background-size: cover;
 }
