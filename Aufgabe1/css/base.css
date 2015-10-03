@@ -4,6 +4,7 @@
  * 2. Prevent iOS and IE text size adjust after device orientation change,
  *    without disabling user zoom.
  */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
 html {
   font-family: sans-serif;
   /* 1 */
@@ -451,6 +452,7 @@ html {
 }
 body {
   margin-bottom: 85px;
+  font-family: 'Open Sans', sans-serif;
   color: #333;
 }
 h1,
