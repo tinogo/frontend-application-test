@@ -10,17 +10,34 @@
 
   .icon {
     font-size: 26px;
+    -webkit-transition: color 0.5s;
+    -moz-transition: color 0.5s;
+    -ms-transition: color 0.5s;
+    -o-transition: color 0.5s;
+    transition: color 0.5s;
 
     &-facebook {
       color: @ci-fb;
+
+      &:hover {
+        color: darken(@ci-fb, 15%);
+      }
     }
 
     &-google {
       color: @ci-google;
+
+      &:hover {
+        color: darken(@ci-google, 15%);
+      }
     }
 
     &-twitter {
       color: @ci-twitter;
+
+      &:hover {
+        color: darken(@ci-twitter, 15%);
+      }
     }
   }
 }

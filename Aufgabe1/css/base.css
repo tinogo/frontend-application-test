@@ -582,15 +582,29 @@ a:hover {
 }
 .footer-wrapper .icon {
   font-size: 26px;
+  -webkit-transition: color 0.5s;
+  -moz-transition: color 0.5s;
+  -ms-transition: color 0.5s;
+  -o-transition: color 0.5s;
+  transition: color 0.5s;
 }
 .footer-wrapper .icon-facebook {
   color: #3b5998;
 }
+.footer-wrapper .icon-facebook:hover {
+  color: #263961;
+}
 .footer-wrapper .icon-google {
   color: #dc4e41;
 }
+.footer-wrapper .icon-google:hover {
+  color: #b02c20;
+}
 .footer-wrapper .icon-twitter {
   color: #55acee;
+}
+.footer-wrapper .icon-twitter:hover {
+  color: #1689e0;
 }
 #tm-copyright {
   font-size: 13px;
