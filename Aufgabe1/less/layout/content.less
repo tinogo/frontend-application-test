@@ -1,4 +1,5 @@
 @import "../mixins";
+@import "../variables";
 
 #main-wrapper {
   > .container {
@@ -19,7 +20,7 @@
   padding-top: 20px;
 
   &:hover a {
-    color: #c0ce00;
+    color: @ci-flyacts;
   }
 }
 
@@ -40,7 +41,7 @@
   margin-bottom: 0;
 }
 
-@media (min-width: 768px) {
+@media (min-width: @bp-tablet) {
   #main-wrapper {
     > .container {
       > .navbar {
@@ -62,7 +63,7 @@
   }
 }
 
-@media (min-width: 992px) {
+@media (min-width: @bp-desktop) {
   .content {
     // Generate 4 columns when in desktop mode
     .part {

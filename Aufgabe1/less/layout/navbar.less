@@ -1,3 +1,5 @@
+@import "../variables";
+
 .navbar-nav {
   margin: 0;
   padding: 0;
@@ -21,21 +23,21 @@
 
       &:hover {
         padding-bottom: 8px;
-        border-bottom: 2px solid #c0ce00;
+        border-bottom: 2px solid @ci-flyacts;
       }
 
       .icon {
         margin-right: 2px;
 
         &-xing {
-          color: #cfdc00;
+          color: @ci-xing;
         }
       }
     }
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: @bp-tablet) {
   .navbar-nav {
     width: 100%;
     position: fixed;
