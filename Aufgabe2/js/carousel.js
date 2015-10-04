@@ -17,6 +17,9 @@
         this.start();
     }
 
+    /**
+     * Displays the next slider item
+     */
     Carousel.prototype.nextSlide = function () {
         for (var i = 0; i < this.slides.length; ++i) {
             utilities.removeClass(this.slides[i], this.visibleClassName);
@@ -28,6 +31,9 @@
         utilities.addClass(this.slides[this.currentSlide], this.visibleClassName);
     };
 
+    /**
+     * Starts the slider
+     */
     Carousel.prototype.start = function () {
         this.nextSlide();
 

@@ -1,0 +1,25 @@
+@import "../mixins";
+@import "../variables";
+
+@media (min-width: @bp-tablet) {
+  .content {
+    // Generate 2 columns when in tablet mode
+    .part {
+      width: 50%;
+      min-height: 195px; // Ugly hack to fix the possibility of unwanted layout glitches
+      padding: 0 1%;
+      float: left;
+    }
+
+    .clearfix-mixin;
+  }
+}
+
+@media (min-width: @bp-desktop) {
+  .content {
+    // Generate 4 columns when in desktop mode
+    .part {
+      width: 25%;
+    }
+  }
+}

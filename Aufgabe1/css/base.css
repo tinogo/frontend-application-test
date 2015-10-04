@@ -552,6 +552,8 @@ a:hover {
   #main-wrapper > .container > .navbar {
     height: 400px;
   }
+}
+@media (min-width: 768px) {
   .content .part {
     width: 50%;
     min-height: 195px;
